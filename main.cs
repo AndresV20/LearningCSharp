@@ -122,3 +122,71 @@ Console.WriteLine("Hel" + "lo");
 // interpolation
 string city = "Berlin";
 Console.WriteLine($"{city} is the capital of Germany");
+
+//10 the if statement 
+if (true){
+    console.WriteLine("It was true")
+}else
+{
+    Console.WriteLine("It was false")
+}
+
+int purchase = 1700;
+if (purchase>=1500)
+{
+    Console.WriteLine("Discount!");
+}
+
+string exampleName = Console.ReadLine();
+int points = 144;
+int minPoints = 100;
+
+if (points>=minPoints){
+    Console.WriteLine($"Well done,{name}!")
+}
+//code problem from the if lesson
+int age = Convert.ToInt32(Console.ReadLine());
+
+        //your code goes here
+        if (age<= 19){
+         Console.WriteLine("Take your kindle");
+        }else if
+
+// 11 the switch statement
+int choice = 2;
+
+switch(choice)
+{
+    case 1:
+        Console.WriteLine("Sports");
+        break;
+            
+    case 2:
+        //match!
+        Console.WriteLine("Business");
+        break;
+            
+    case 3:
+        Console.WriteLine("Technology");
+        break;
+    default: 
+        Console.WriteLine("Invalid input")
+}
+// 12 ternary operator
+int age = 42;
+string isAdult = age<18 ? "Too young": "Old enough";
+
+Console.WriteLine(isAdult);
+//code exercise 
+        int hour = Convert.ToInt32(Console.ReadLine());
+
+        //your code goes here
+        string result = (hour<13)? "AM": "PM";
+        Console.WriteLine(result);
+
+//13 Loops
+//13.1 For loop
+for(int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"Value of i: {i}");
+}
