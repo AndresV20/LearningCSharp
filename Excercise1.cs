@@ -87,3 +87,52 @@ public static class fuel
     return result;
   }
 }
+// 27-12-22
+//This code should store "codewa.rs" as a variable called name but it's not working. Can you figure out why?
+public class Kata
+{
+  private int valor;
+    static string a = "code";
+    static string b = "wa.rs";
+    public static string Name = a + b;
+}
+
+/* There were serveral issues to solve, one of them was that the variables were not declared properly,
+and the Name needs to be public because one of the tests was calling Kata.Name directly*/
+
+
+//Oh no! Timmy's evalObject function doesn't work. He uses Switch/Cases to evaluate the given properties of an object, can you fix timmy's function?
+public class Kata
+{
+  public static double EvalObject(double value1, double value2, char operation)
+  {
+    double result = 0;
+    switch(operation)
+    {
+      case '+': 
+        result = value1 + value2; 
+        break;
+      case '-': 
+        result = value1 - value2;
+        break;
+      case '/': 
+        result = value1 / value2;
+        break;
+      case '*': 
+        result = value1 * value2;
+        break;
+      case '%': 
+        result = value1 % value2;
+        break;
+      case '^': 
+        result = Math.Pow(value1, value2);
+        break;
+    }
+    return result;
+  }
+}
+
+/*This one was simpler to solve, the issue here was that the switch was missing the break statements,
+this causes the result to be overwritten every time it reaches a new case, this would result in it having
+the result of the final case every time.
+

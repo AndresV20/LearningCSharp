@@ -190,3 +190,14 @@ for(int i = 1; i <= 10; i++)
 {
     Console.WriteLine($"Value of i: {i}");
 }
+
+//code challenge 
+int num = Convert.ToInt32(Console.ReadLine());
+
+        //your code goes here
+int factorial = 1;
+for (int i = 1; i<=num; i++){
+    factorial*=i;    
+    }
+ Console.WriteLine(factorial);
+//Calculates the factorial for a number including 1
