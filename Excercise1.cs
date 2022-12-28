@@ -134,5 +134,6 @@ public class Kata
 
 /*This one was simpler to solve, the issue here was that the switch was missing the break statements,
 this causes the result to be overwritten every time it reaches a new case, this would result in it having
-the result of the final case every time.
+the result of the final case every time. */
+// Another possible solution to this was to not use break and add a return at the start of the result instruction in every case
 
