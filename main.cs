@@ -201,3 +201,39 @@ for (int i = 1; i<=num; i++){
     }
  Console.WriteLine(factorial);
 //Calculates the factorial for a number including 1
+
+//Loops coding challenge
+public class Program
+{
+    static void Main(string[] args)
+    {
+        int num = Convert.ToInt32(Console.ReadLine());
+        int sum = 0;
+        //your code goes here
+        while (num>0){
+            sum+=num--;
+        }
+        Console.WriteLine(sum);
+    }
+}
+//Adds number 1 to N, where N is a user input number, so if N = 10 it while add the numbers from 1 through 10
+//14 Break and continue
+//Coding challenge from the break and continue lesson
+public class Program
+{
+    static void Main(string[] args)
+    {
+        int num = 1;
+
+        for(int i = 1; i<=100; i++)
+        {
+            //your code goes here
+            if (num>10000){
+                break;
+            }else{
+                num*=i;
+            }       
+        }
+        Console.WriteLine(num);
+    }
+}
